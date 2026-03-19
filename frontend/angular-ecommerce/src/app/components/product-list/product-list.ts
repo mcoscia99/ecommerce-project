@@ -5,7 +5,7 @@ import { Product } from '../../common/product';
 @Component({
   selector: 'app-product-list',
   standalone: false,
-  templateUrl: './product-list.html',
+  templateUrl: './product-grid.html',
   styleUrl: './product-list.css',
 })
 export class ProductList implements OnInit {
