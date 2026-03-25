@@ -6,22 +6,16 @@ import { App } from './app';
 import { ProductList } from './components/product-list/product-list';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductService } from './services/product-service';
+import { ProductCategoryMenu } from './components/product-category-menu/product-category-menu';
 
 @NgModule({
-  declarations: [
-    App,
-    ProductList
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule
-  ],
+  declarations: [App, ProductList, ProductCategoryMenu],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideClientHydration(withEventReplay()),
-    ProductService
+    ProductService,
   ],
-  bootstrap: [App]
+  bootstrap: [App],
 })
-export class AppModule { }
+export class AppModule {}
